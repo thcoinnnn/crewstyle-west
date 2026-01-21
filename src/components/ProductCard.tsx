@@ -1,23 +1,41 @@
 import { ShoppingBag, Heart } from "lucide-react";
 import { Product } from "@/data/products";
+import { useState } from "react";
 
 type ProductCardProps = {
   product: Product;
 };
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const [imageError, setImageError] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const formatPrice = (price: number) => {
     return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
   };
+
+  const fallbackImage = "/placeholder.svg";
 
   return (
     <div className="card-product rounded-xl overflow-hidden group">
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden bg-secondary">
+        {!imageLoaded && !imageError && (
+          <div className="absolute inset-0 flex items-center justify-center bg-secondary animate-pulse">
+            <div className="w-12 h-12 rounded-full border-2 border-primary border-t-transparent animate-spin" />
+          </div>
+        )}
         <img 
-          src={product.image} 
+          src={imageError ? fallbackImage : product.image} 
           alt={product.name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-110 ${
+            imageLoaded ? 'opacity-100' : 'opacity-0'
+          }`}
+          onLoad={() => setImageLoaded(true)}
+          onError={() => {
+            setImageError(true);
+            setImageLoaded(true);
+          }}
         />
         
         {/* Badges */}

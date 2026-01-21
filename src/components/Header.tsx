@@ -22,9 +22,9 @@ const Header = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#produtos" className="nav-link text-sm">Produtos</a>
-            <a href="#nike-tech" className="nav-link text-sm">Nike Tech</a>
-            <a href="#jordan" className="nav-link text-sm">Jordan</a>
+            <button onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })} className="nav-link text-sm">Produtos</button>
+            <button onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })} className="nav-link text-sm">Nike Tech</button>
+            <button onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })} className="nav-link text-sm">Jordan</button>
             <Link to="/suporte" className="nav-link text-sm">Suporte</Link>
           </nav>
 
@@ -82,9 +82,9 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
-              <a href="#produtos" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Produtos</a>
-              <a href="#nike-tech" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Nike Tech</a>
-              <a href="#jordan" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Jordan</a>
+              <button className="nav-link text-sm py-2 text-left" onClick={() => { document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' }); setIsMenuOpen(false); }}>Produtos</button>
+              <button className="nav-link text-sm py-2 text-left" onClick={() => { document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' }); setIsMenuOpen(false); }}>Nike Tech</button>
+              <button className="nav-link text-sm py-2 text-left" onClick={() => { document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' }); setIsMenuOpen(false); }}>Jordan</button>
               <Link to="/suporte" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Suporte</Link>
               <Link to={user ? "/perfil" : "/login"} className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>
                 {user ? "Meu Perfil" : "Entrar"}

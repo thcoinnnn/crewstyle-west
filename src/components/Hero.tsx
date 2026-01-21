@@ -41,18 +41,18 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <a 
-              href="#produtos" 
+            <button 
+              onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-gold px-8 py-4 rounded-lg text-lg w-full sm:w-auto text-center"
             >
               Ver Coleção
-            </a>
-            <a 
-              href="#nike-tech" 
+            </button>
+            <button 
+              onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })}
               className="btn-outline-gold px-8 py-4 rounded-lg text-lg w-full sm:w-auto text-center"
             >
               Nike Tech
-            </a>
+            </button>
           </div>
 
           {/* Stats */}
