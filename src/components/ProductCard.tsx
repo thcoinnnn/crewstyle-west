@@ -1,6 +1,8 @@
 import { ShoppingBag, Heart } from "lucide-react";
 import { Product } from "@/data/products";
 import { useState } from "react";
+import { useCart } from "@/hooks/useCart";
+import { useToast } from "@/hooks/use-toast";
 
 type ProductCardProps = {
   product: Product;
@@ -9,9 +11,19 @@ type ProductCardProps = {
 const ProductCard = ({ product }: ProductCardProps) => {
   const [imageError, setImageError] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+  const { addItem } = useCart();
+  const { toast } = useToast();
 
   const formatPrice = (price: number) => {
     return price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+  };
+
+  const handleAddToCart = () => {
+    addItem(product);
+    toast({
+      title: "Adicionado ao carrinho!",
+      description: `${product.name} foi adicionado.`,
+    });
   };
 
   const fallbackImage = "/placeholder.svg";
@@ -66,7 +78,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         {/* Add to Cart Overlay */}
         <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-background/95 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <button className="btn-gold w-full py-3 rounded-lg flex items-center justify-center gap-2 text-sm">
+          <button 
+            onClick={handleAddToCart}
+            className="btn-gold w-full py-3 rounded-lg flex items-center justify-center gap-2 text-sm"
+          >
             <ShoppingBag className="w-4 h-4" />
             Adicionar
           </button>
