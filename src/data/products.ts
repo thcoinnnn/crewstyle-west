@@ -19,7 +19,7 @@ export const products: Product[] = [
     price: 449.90,
     originalPrice: 599.90,
     color: "Preto",
-    image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=600&fit=crop",
     isBestSeller: true,
   },
   {
@@ -28,7 +28,7 @@ export const products: Product[] = [
     category: "nike-tech",
     price: 449.90,
     color: "Cinza",
-    image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&h=600&fit=crop",
   },
   {
     id: "tech-3",
@@ -36,7 +36,7 @@ export const products: Product[] = [
     category: "nike-tech",
     price: 449.90,
     color: "Azul Marinho",
-    image: "https://images.unsplash.com/photo-1578932750294-f5075e85f44a?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&h=600&fit=crop",
     isNew: true,
   },
   {
@@ -45,7 +45,7 @@ export const products: Product[] = [
     category: "nike-tech",
     price: 449.90,
     color: "Verde Militar",
-    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop",
   },
   {
     id: "tech-5",
@@ -89,7 +89,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 1299.90,
     color: "Chicago",
-    image: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&h=600&fit=crop",
     isBestSeller: true,
   },
   {
@@ -98,7 +98,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 1499.90,
     color: "Bred",
-    image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=600&h=600&fit=crop",
     isNew: true,
   },
   {
@@ -107,7 +107,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 899.90,
     color: "Shadow",
-    image: "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop",
   },
   {
     id: "jordan-4",
@@ -142,7 +142,7 @@ export const products: Product[] = [
     category: "off-white",
     price: 899.90,
     color: "Cinza",
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&h=600&fit=crop",
     isBestSeller: true,
   },
 
@@ -179,7 +179,7 @@ export const products: Product[] = [
     category: "balaclavas",
     price: 149.90,
     color: "Preto",
-    image: "https://images.unsplash.com/photo-1588117305388-c2631a279f82?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=600&fit=crop",
     isBestSeller: true,
   },
   {
@@ -188,7 +188,7 @@ export const products: Product[] = [
     category: "balaclavas",
     price: 149.90,
     color: "Cinza",
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop",
   },
   {
     id: "bala-3",
@@ -196,7 +196,7 @@ export const products: Product[] = [
     category: "balaclavas",
     price: 179.90,
     color: "Preto/Branco",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&h=600&fit=crop",
     isNew: true,
   },
 
