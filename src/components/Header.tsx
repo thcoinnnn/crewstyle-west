@@ -1,8 +1,9 @@
-import { ShoppingBag, Menu, X, User, Search, HelpCircle } from "lucide-react";
+import { Menu, X, User, Search, HelpCircle } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
 import SearchBar from "./SearchBar";
+import CartSheet from "./CartSheet";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,12 +55,7 @@ const Header = () => {
               <User className="w-5 h-5 text-foreground" />
             </Link>
 
-            <button className="relative p-2 hover:bg-secondary rounded-lg transition-colors">
-              <ShoppingBag className="w-5 h-5 text-foreground" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-primary text-primary-foreground text-xs font-bold rounded-full flex items-center justify-center">
-                0
-              </span>
-            </button>
+            <CartSheet />
 
             {/* Mobile Menu Button */}
             <button 
