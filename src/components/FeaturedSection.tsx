@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FeaturedSection = () => {
   const featured = [
@@ -8,7 +9,7 @@ const FeaturedSection = () => {
       subtitle: "Conforto Premium",
       description: "A tecnologia mais avançada em vestuário esportivo",
       image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=600&fit=crop",
-      link: "#nike-tech",
+      link: "/marca/nike",
     },
     {
       id: 2,
@@ -16,15 +17,15 @@ const FeaturedSection = () => {
       subtitle: "Lendário",
       description: "O legado continua nos seus pés",
       image: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=800&h=600&fit=crop",
-      link: "#jordan",
+      link: "/marca/jordan",
     },
     {
       id: 3,
-      title: "Off-White",
+      title: "Supreme",
       subtitle: "Exclusivo",
-      description: "Streetwear de alta costura",
+      description: "Streetwear icônico de Nova York",
       image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&h=600&fit=crop",
-      link: "#off-white",
+      link: "/marca/supreme",
     },
   ];
 
@@ -41,9 +42,9 @@ const FeaturedSection = () => {
         {/* Featured Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {featured.map((item, index) => (
-            <a
+            <Link
               key={item.id}
-              href={item.link}
+              to={item.link}
               className="group relative overflow-hidden rounded-2xl aspect-[4/5] animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -76,7 +77,7 @@ const FeaturedSection = () => {
 
               {/* Hover Border */}
               <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/50 rounded-2xl transition-colors duration-300" />
-            </a>
+            </Link>
           ))}
         </div>
       </div>

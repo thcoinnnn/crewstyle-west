@@ -1,6 +1,9 @@
 import { ChevronDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background */}
@@ -48,7 +51,7 @@ const Hero = () => {
               Ver Coleção
             </button>
             <button 
-              onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => navigate('/marca/nike')}
               className="btn-outline-gold px-8 py-4 rounded-lg text-lg w-full sm:w-auto text-center"
             >
               Nike Tech
