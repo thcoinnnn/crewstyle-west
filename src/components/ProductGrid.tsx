@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { products, categories } from "@/data/products";
 import ProductCard from "./ProductCard";
+import { ArrowRight } from "lucide-react";
 
 const ProductGrid = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -23,7 +25,7 @@ const ProductGrid = () => {
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-8">
           {categories.map((category) => (
             <button
               key={category.id}
@@ -35,6 +37,20 @@ const ProductGrid = () => {
               <span>{category.icon}</span>
               <span>{category.name}</span>
             </button>
+          ))}
+        </div>
+
+        {/* Brand Pages Links */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {categories.filter(c => c.id !== "all").map((category) => (
+            <Link
+              key={category.id}
+              to={`/marca/${category.id}`}
+              className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
+            >
+              Ver página {category.name}
+              <ArrowRight className="w-3 h-3" />
+            </Link>
           ))}
         </div>
 

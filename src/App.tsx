@@ -11,6 +11,7 @@ import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import Support from "./pages/Support";
 import SearchPage from "./pages/Search";
+import BrandPage from "./pages/BrandPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
               <Route path="/perfil" element={<Profile />} />
               <Route path="/suporte" element={<Support />} />
               <Route path="/buscar" element={<SearchPage />} />
+              <Route path="/marca/:brand" element={<BrandPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
