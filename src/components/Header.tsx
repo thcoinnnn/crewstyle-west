@@ -24,8 +24,9 @@ const Header = () => {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             <button onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })} className="nav-link text-sm">Produtos</button>
-            <button onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })} className="nav-link text-sm">Nike Tech</button>
-            <button onClick={() => document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' })} className="nav-link text-sm">Jordan</button>
+            <Link to="/marca/nike" className="nav-link text-sm">Nike Tech</Link>
+            <Link to="/marca/jordan" className="nav-link text-sm">Jordan</Link>
+            <Link to="/marca/supreme" className="nav-link text-sm">Supreme</Link>
             <Link to="/suporte" className="nav-link text-sm">Suporte</Link>
           </nav>
 
@@ -79,8 +80,10 @@ const Header = () => {
           <nav className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
               <button className="nav-link text-sm py-2 text-left" onClick={() => { document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' }); setIsMenuOpen(false); }}>Produtos</button>
-              <button className="nav-link text-sm py-2 text-left" onClick={() => { document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' }); setIsMenuOpen(false); }}>Nike Tech</button>
-              <button className="nav-link text-sm py-2 text-left" onClick={() => { document.getElementById('produtos')?.scrollIntoView({ behavior: 'smooth' }); setIsMenuOpen(false); }}>Jordan</button>
+              <Link to="/marca/nike" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Nike Tech</Link>
+              <Link to="/marca/jordan" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Jordan</Link>
+              <Link to="/marca/supreme" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Supreme</Link>
+              <Link to="/marca/bape" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Bape</Link>
               <Link to="/suporte" className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>Suporte</Link>
               <Link to={user ? "/perfil" : "/login"} className="nav-link text-sm py-2" onClick={() => setIsMenuOpen(false)}>
                 {user ? "Meu Perfil" : "Entrar"}
