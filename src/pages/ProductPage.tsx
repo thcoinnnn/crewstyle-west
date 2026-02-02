@@ -94,7 +94,7 @@ const ProductPage = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
             {/* Product Image */}
             <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden bg-secondary sticky top-24">
+              <div className="aspect-[4/5] lg:aspect-square rounded-2xl overflow-hidden bg-secondary sticky top-24">
                 {!imageLoaded && (
                   <div className="absolute inset-0 flex items-center justify-center bg-secondary animate-pulse">
                     <div className="w-16 h-16 rounded-full border-2 border-primary border-t-transparent animate-spin" />
@@ -103,9 +103,10 @@ const ProductPage = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className={`w-full h-full object-cover transition-opacity duration-500 ${
+                  className={`w-full h-full object-contain bg-secondary transition-opacity duration-500 ${
                     imageLoaded ? 'opacity-100' : 'opacity-0'
                   }`}
+                  style={{ imageRendering: 'auto' }}
                   onLoad={() => setImageLoaded(true)}
                 />
                 
