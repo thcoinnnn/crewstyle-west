@@ -1,3 +1,20 @@
+// Product images imports
+import nikeDunkLowPanda from "@/assets/products/nike-dunk-low-panda.jpg";
+import nikeAirForce1White from "@/assets/products/nike-air-force-1-white.jpg";
+import nikeSbDunkParra from "@/assets/products/nike-sb-dunk-parra.jpg";
+import nikeAirMaxTnPlus from "@/assets/products/nike-air-max-tn-plus.jpg";
+import nikeVomero5 from "@/assets/products/nike-vomero-5.jpg";
+import jordan4Raptors from "@/assets/products/jordan-4-raptors.jpg";
+import jordan1Chicago from "@/assets/products/jordan-1-chicago.jpg";
+import jordan1LowShadow from "@/assets/products/jordan-1-low-shadow.jpg";
+import jordan11Concord from "@/assets/products/jordan-11-concord.jpg";
+import jordan4Bred from "@/assets/products/jordan-4-bred.jpg";
+import jordan3WhiteCement from "@/assets/products/jordan-3-white-cement.jpg";
+import supremeBoxLogoTeeWhite from "@/assets/products/supreme-box-logo-tee-white.jpg";
+import supremeGasTeeBlack from "@/assets/products/supreme-gas-tee-black.jpg";
+import supremeBoxLogoHoodieGrey from "@/assets/products/supreme-box-logo-hoodie-grey.jpg";
+import bapeSharkHoodieBlue from "@/assets/products/bape-shark-hoodie-blue.jpg";
+
 export type Product = {
   id: string;
   name: string;
@@ -18,7 +35,7 @@ export const products: Product[] = [
     category: "nike",
     price: 699.00,
     color: "Preto/Branco",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/af407579-d7b5-4a5b-a8f2-3d4e4e2c7e1a/dunk-low-retro-shoes-5FQWGM.png",
+    image: nikeDunkLowPanda,
     isBestSeller: true,
   },
   {
@@ -46,7 +63,7 @@ export const products: Product[] = [
     price: 899.00,
     originalPrice: 1099.00,
     color: "Branco/Multicolor",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/sb-dunk-low-parra.png",
+    image: nikeSbDunkParra,
   },
   {
     id: "nike-5",
@@ -63,15 +80,16 @@ export const products: Product[] = [
     category: "nike",
     price: 849.00,
     color: "Preto",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/air-max-plus.png",
+    image: nikeAirMaxTnPlus,
   },
   {
     id: "nike-7",
     name: "Nike Vomero 5",
     category: "nike",
     price: 799.00,
-    color: "Cinza/Prata",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/g7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/vomero-5.png",
+    color: "Platinum Tint",
+    image: nikeVomero5,
+    isNew: true,
   },
   {
     id: "nike-8",
@@ -88,7 +106,7 @@ export const products: Product[] = [
     category: "nike",
     price: 599.00,
     color: "Branco",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/i7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/air-force-1-low.png",
+    image: nikeAirForce1White,
     isBestSeller: true,
   },
   {
@@ -107,7 +125,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 829.00,
     color: "Preto/Roxo/Vermelho",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/k7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-4-raptors.png",
+    image: jordan4Raptors,
     isBestSeller: true,
   },
   {
@@ -134,7 +152,7 @@ export const products: Product[] = [
     price: 1199.00,
     originalPrice: 1399.00,
     color: "Chicago",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/n7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-1-chicago.png",
+    image: jordan1Chicago,
     isBestSeller: true,
   },
   {
@@ -143,7 +161,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 749.00,
     color: "Shadow Grey",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/o7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-1-low-shadow.png",
+    image: jordan1LowShadow,
   },
   {
     id: "jordan-6",
@@ -151,7 +169,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 1299.00,
     color: "Branco/Preto/Azul",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/p7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-11-concord.png",
+    image: jordan11Concord,
     isNew: true,
   },
   {
@@ -160,7 +178,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 999.00,
     color: "Preto/Vermelho",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/q7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-4-bred.png",
+    image: jordan4Bred,
     isBestSeller: true,
   },
   {
@@ -169,7 +187,7 @@ export const products: Product[] = [
     category: "jordan",
     price: 1099.00,
     color: "Branco/Cinza",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/r7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-3-cement.png",
+    image: jordan3WhiteCement,
   },
 
   // === SUPREME ===
@@ -179,7 +197,7 @@ export const products: Product[] = [
     category: "supreme",
     price: 449.00,
     color: "Branco",
-    image: "https://images.stockx.com/images/Supreme-Box-Logo-Tee-FW23-White-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1701963826",
+    image: supremeBoxLogoTeeWhite,
     isBestSeller: true,
   },
   {
@@ -188,7 +206,7 @@ export const products: Product[] = [
     category: "supreme",
     price: 349.00,
     color: "Preto",
-    image: "https://images.stockx.com/images/Supreme-Gas-Tee-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color",
+    image: supremeGasTeeBlack,
     isNew: true,
   },
   {
@@ -222,7 +240,7 @@ export const products: Product[] = [
     category: "supreme",
     price: 799.00,
     color: "Cinza",
-    image: "https://images.stockx.com/images/Supreme-Box-Logo-Hooded-Sweatshirt-FW23-Heather-Grey-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color",
+    image: supremeBoxLogoHoodieGrey,
     isBestSeller: true,
   },
   {
@@ -235,7 +253,7 @@ export const products: Product[] = [
     isNew: true,
   },
 
-  // === SYNA WORLD ===
+  // === SYNA WORLD (placeholders - imagens não disponíveis no StockX) ===
   {
     id: "syna-1",
     name: "Conjunto Syna World Tracksuit",
@@ -298,7 +316,7 @@ export const products: Product[] = [
     isBestSeller: true,
   },
 
-  // === TRAPSTAR ===
+  // === TRAPSTAR (placeholders - imagens não disponíveis no StockX) ===
   {
     id: "trapstar-1",
     name: "Conjunto Trapstar Central Cee",
@@ -361,7 +379,7 @@ export const products: Product[] = [
     image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&h=600&fit=crop",
   },
 
-  // === OFF-WHITE ===
+  // === OFF-WHITE (placeholders - imagens específicas não encontradas) ===
   {
     id: "offwhite-1",
     name: "Camiseta Off-White Arrow Logo",
@@ -423,7 +441,7 @@ export const products: Product[] = [
     category: "bape",
     price: 999.00,
     color: "Azul Camo",
-    image: "https://images.unsplash.com/photo-1614975059251-992f11792571?w=600&h=600&fit=crop",
+    image: bapeSharkHoodieBlue,
     isBestSeller: true,
   },
   {
