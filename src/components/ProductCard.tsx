@@ -1,4 +1,5 @@
 import { ShoppingBag, Heart } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Product } from "@/data/products";
 import { useState } from "react";
 import { useCart } from "@/hooks/useCart";
@@ -9,6 +10,7 @@ type ProductCardProps = {
 };
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const navigate = useNavigate();
   const [imageError, setImageError] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const { addItem } = useCart();
@@ -28,8 +30,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   const fallbackImage = "/placeholder.svg";
 
+  const handleNavigateToProduct = () => {
+    navigate(`/produto/${product.id}`);
+  };
+
   return (
-    <div className="card-product rounded-xl overflow-hidden group">
+    <div className="card-product rounded-xl overflow-hidden group cursor-pointer" onClick={handleNavigateToProduct}>
       {/* Image Container */}
       <div className="relative aspect-square overflow-hidden bg-secondary">
         {!imageLoaded && !imageError && (
@@ -79,7 +85,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
         {/* Add to Cart Overlay */}
         <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-background/95 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
           <button 
-            onClick={handleAddToCart}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleAddToCart();
+            }}
             className="btn-gold w-full py-3 rounded-lg flex items-center justify-center gap-2 text-sm"
           >
             <ShoppingBag className="w-4 h-4" />

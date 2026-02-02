@@ -87,9 +87,6 @@ export const products: Product[] = [
   { id: "bape-6", name: "BAPE Tiger Full Zip Hoodie", category: "bape", price: 1099, color: "Preto", image: bapeTigerHoodieBlack, isNew: true },
   { id: "bape-7", name: "BAPE 1st Camo New Era Cap", category: "bape", price: 299, color: "Verde Camo", image: bapeNewEraCapGreen },
   { id: "bape-8", name: "BAPE Shark Sweat Shorts", category: "bape", price: 449, color: "Preto", image: bapeSharkSweatShortsBlack },
-  // SYNA WORLD
-  { id: "syna-1", name: "Syna World Central Cee Tracksuit", category: "syna-world", price: 649, color: "Preto", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop", isBestSeller: true },
-  { id: "syna-2", name: "Syna World x Nemzzz RDT Tee", category: "syna-world", price: 379, color: "Preto", image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop", isNew: true },
   // TRAPSTAR
   { id: "trapstar-1", name: "Trapstar Irongate Central Cee Tracksuit", category: "trapstar", price: 879, originalPrice: 949, color: "Preto/Neon", image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&h=600&fit=crop", isBestSeller: true },
   { id: "trapstar-2", name: "Trapstar Irongate Shell Tracksuit", category: "trapstar", price: 799, color: "Preto/Teal", image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&h=600&fit=crop", isNew: true },
@@ -104,7 +101,6 @@ export const categories = [
   { id: "jordan", name: "Jordan", icon: "🏀" },
   { id: "supreme", name: "Supreme", icon: "📦" },
   { id: "bape", name: "Bape", icon: "🦍" },
-  { id: "syna-world", name: "Syna World", icon: "🌍" },
   { id: "trapstar", name: "Trapstar", icon: "⭐" },
   { id: "off-white", name: "Off-White", icon: "⚡" },
 ];
