@@ -1,4 +1,4 @@
-// Product images imports
+// Product images imports - SNEAKERS
 import nikeDunkLowPanda from "@/assets/products/nike-dunk-low-panda.jpg";
 import nikeAirForce1White from "@/assets/products/nike-air-force-1-white.jpg";
 import nikeSbDunkParra from "@/assets/products/nike-sb-dunk-parra.jpg";
@@ -10,10 +10,31 @@ import jordan1LowShadow from "@/assets/products/jordan-1-low-shadow.jpg";
 import jordan11Concord from "@/assets/products/jordan-11-concord.jpg";
 import jordan4Bred from "@/assets/products/jordan-4-bred.jpg";
 import jordan3WhiteCement from "@/assets/products/jordan-3-white-cement.jpg";
+// Product images imports - NIKE APPAREL
+import nikeTechFleeceHoodieBlack from "@/assets/products/nike-tech-fleece-hoodie-black.jpg";
+import nikeTechFleeceHoodieGrey from "@/assets/products/nike-tech-fleece-hoodie-grey.jpg";
+import nikeTechFleeceJoggersBlack from "@/assets/products/nike-tech-fleece-joggers-black.jpg";
+import nikeTechFleeceJoggersGrey from "@/assets/products/nike-tech-fleece-joggers-grey.jpg";
+// Product images imports - SUPREME
 import supremeBoxLogoTeeWhite from "@/assets/products/supreme-box-logo-tee-white.jpg";
 import supremeGasTeeBlack from "@/assets/products/supreme-gas-tee-black.jpg";
 import supremeBoxLogoHoodieGrey from "@/assets/products/supreme-box-logo-hoodie-grey.jpg";
+import supremeBeanieBlack from "@/assets/products/supreme-beanie-black.jpg";
+import supremeCrossBoxLogoHoodieBlack from "@/assets/products/supreme-cross-box-logo-hoodie-black.jpg";
+import supremeBandanaBoxLogoHoodieBlack from "@/assets/products/supreme-bandana-box-logo-hoodie-black.jpg";
+import supremeSwarovskiBoxLogoHoodieBlack from "@/assets/products/supreme-swarovski-box-logo-hoodie-black.jpg";
+import supremeArabicLogoHoodieBlack from "@/assets/products/supreme-arabic-logo-hoodie-black.jpg";
+import supremeSLogoHoodieBlack from "@/assets/products/supreme-s-logo-hoodie-black.jpg";
+import supremeMotionLogoHoodieBlack from "@/assets/products/supreme-motion-logo-hoodie-black.jpg";
+// Product images imports - BAPE
 import bapeSharkHoodieBlue from "@/assets/products/bape-shark-hoodie-blue.jpg";
+import bapeSharkHoodieBlack from "@/assets/products/bape-shark-hoodie-black.jpg";
+import bapeSharkHoodiePurple from "@/assets/products/bape-shark-hoodie-purple.jpg";
+import bapeSharkHoodieGreen from "@/assets/products/bape-shark-hoodie-green.jpg";
+import bapeSharkHoodieRed from "@/assets/products/bape-shark-hoodie-red.jpg";
+import bapeTigerHoodieBlack from "@/assets/products/bape-tiger-hoodie-black.jpg";
+import bapeNewEraCapGreen from "@/assets/products/bape-new-era-cap-green.jpg";
+import bapeSharkSweatShortsBlack from "@/assets/products/bape-shark-sweat-shorts-black.jpg";
 
 export type Product = {
   id: string;
@@ -28,474 +49,53 @@ export type Product = {
 };
 
 export const products: Product[] = [
-  // === NIKE SNEAKERS ===
-  {
-    id: "nike-1",
-    name: "Nike Dunk Low Panda",
-    category: "nike",
-    price: 699.00,
-    color: "Preto/Branco",
-    image: nikeDunkLowPanda,
-    isBestSeller: true,
-  },
-  {
-    id: "nike-2",
-    name: "Nike Air Max DN White",
-    category: "nike",
-    price: 699.00,
-    color: "Branco",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0c9d7c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/air-max-dn-shoes.png",
-    isNew: true,
-  },
-  {
-    id: "nike-3",
-    name: "NOCTA x Nike Air Force 1 Low Pink Foam",
-    category: "nike",
-    price: 799.00,
-    color: "Rosa",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/nocta-air-force-1-low-pink-foam.png",
-    isBestSeller: true,
-  },
-  {
-    id: "nike-4",
-    name: "Nike SB Dunk Low Parra White",
-    category: "nike",
-    price: 899.00,
-    originalPrice: 1099.00,
-    color: "Branco/Multicolor",
-    image: nikeSbDunkParra,
-  },
-  {
-    id: "nike-5",
-    name: "Nike Dunk Low Black Patent Pink",
-    category: "nike",
-    price: 749.00,
-    color: "Preto/Rosa",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/dunk-low-black-pink.png",
-    isNew: true,
-  },
-  {
-    id: "nike-6",
-    name: "Nike Air Max TN Plus",
-    category: "nike",
-    price: 849.00,
-    color: "Preto",
-    image: nikeAirMaxTnPlus,
-  },
-  {
-    id: "nike-7",
-    name: "Nike Vomero 5",
-    category: "nike",
-    price: 799.00,
-    color: "Platinum Tint",
-    image: nikeVomero5,
-    isNew: true,
-  },
-  {
-    id: "nike-8",
-    name: "Nike Air Dunk Jumbo Mint Foam",
-    category: "nike",
-    price: 729.00,
-    color: "Verde Menta",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/h7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/dunk-jumbo.png",
-    isNew: true,
-  },
-  {
-    id: "nike-9",
-    name: "Nike Air Force 1 Low White",
-    category: "nike",
-    price: 599.00,
-    color: "Branco",
-    image: nikeAirForce1White,
-    isBestSeller: true,
-  },
-  {
-    id: "nike-10",
-    name: "Nike Shox TL 12 Molas",
-    category: "nike",
-    price: 899.00,
-    color: "Preto/Prata",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/j7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/shox-tl.png",
-  },
-
-  // === JORDAN ===
-  {
-    id: "jordan-1",
-    name: "Air Jordan 4 Raptors",
-    category: "jordan",
-    price: 829.00,
-    color: "Preto/Roxo/Vermelho",
-    image: jordan4Raptors,
-    isBestSeller: true,
-  },
-  {
-    id: "jordan-2",
-    name: "Air Jordan 4 Taupe Haze",
-    category: "jordan",
-    price: 819.00,
-    color: "Taupe/Vermelho",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/l7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-4-taupe-haze.png",
-    isNew: true,
-  },
-  {
-    id: "jordan-3",
-    name: "Air Jordan 4 Oklahoma Sooners PE",
-    category: "jordan",
-    price: 899.00,
-    color: "Vermelho/Branco",
-    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/m7d9c9a-9d7c-4e1a-8c2a-3d4e4e2c7e1a/jordan-4-oklahoma.png",
-  },
-  {
-    id: "jordan-4",
-    name: "Air Jordan 1 Retro High OG Chicago",
-    category: "jordan",
-    price: 1199.00,
-    originalPrice: 1399.00,
-    color: "Chicago",
-    image: jordan1Chicago,
-    isBestSeller: true,
-  },
-  {
-    id: "jordan-5",
-    name: "Air Jordan 1 Low Shadow",
-    category: "jordan",
-    price: 749.00,
-    color: "Shadow Grey",
-    image: jordan1LowShadow,
-  },
-  {
-    id: "jordan-6",
-    name: "Air Jordan 11 Concord",
-    category: "jordan",
-    price: 1299.00,
-    color: "Branco/Preto/Azul",
-    image: jordan11Concord,
-    isNew: true,
-  },
-  {
-    id: "jordan-7",
-    name: "Air Jordan 4 Bred",
-    category: "jordan",
-    price: 999.00,
-    color: "Preto/Vermelho",
-    image: jordan4Bred,
-    isBestSeller: true,
-  },
-  {
-    id: "jordan-8",
-    name: "Air Jordan 3 White Cement",
-    category: "jordan",
-    price: 1099.00,
-    color: "Branco/Cinza",
-    image: jordan3WhiteCement,
-  },
-
-  // === SUPREME ===
-  {
-    id: "supreme-1",
-    name: "Camiseta Supreme Box Logo",
-    category: "supreme",
-    price: 449.00,
-    color: "Branco",
-    image: supremeBoxLogoTeeWhite,
-    isBestSeller: true,
-  },
-  {
-    id: "supreme-2",
-    name: "Camiseta Supreme Gas",
-    category: "supreme",
-    price: 349.00,
-    color: "Preto",
-    image: supremeGasTeeBlack,
-    isNew: true,
-  },
-  {
-    id: "supreme-3",
-    name: "Balaclava Supreme Heat Reactive",
-    category: "supreme",
-    price: 339.00,
-    color: "Preta/Azul",
-    image: "https://images.stockx.com/images/Supreme-Balaclava-Heat-Reactive.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color",
-  },
-  {
-    id: "supreme-4",
-    name: "Camiseta Supreme Ducati Bike",
-    category: "supreme",
-    price: 349.00,
-    color: "Preto",
-    image: "https://images.stockx.com/images/Supreme-Ducati-Tee-Black-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color",
-  },
-  {
-    id: "supreme-5",
-    name: "Camiseta Supreme Shrek",
-    category: "supreme",
-    price: 319.00,
-    originalPrice: 379.00,
-    color: "Verde",
-    image: "https://images.stockx.com/images/Supreme-Shrek-Tee-Green-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color",
-  },
-  {
-    id: "supreme-6",
-    name: "Hoodie Supreme Box Logo",
-    category: "supreme",
-    price: 799.00,
-    color: "Cinza",
-    image: supremeBoxLogoHoodieGrey,
-    isBestSeller: true,
-  },
-  {
-    id: "supreme-7",
-    name: "Boné Supreme Camp Cap",
-    category: "supreme",
-    price: 249.00,
-    color: "Vermelho",
-    image: "https://images.stockx.com/images/Supreme-Camp-Cap-Red-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color",
-    isNew: true,
-  },
-
-  // === SYNA WORLD (placeholders - imagens não disponíveis no StockX) ===
-  {
-    id: "syna-1",
-    name: "Conjunto Syna World Tracksuit",
-    category: "syna-world",
-    price: 649.00,
-    color: "Preto",
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop",
-    isBestSeller: true,
-  },
-  {
-    id: "syna-2",
-    name: "Camiseta Syna World x Nemzzz RDT",
-    category: "syna-world",
-    price: 379.00,
-    color: "Preta",
-    image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "syna-3",
-    name: "Syna World Energy Crewneck",
-    category: "syna-world",
-    price: 449.00,
-    color: "Verde",
-    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&h=600&fit=crop",
-  },
-  {
-    id: "syna-4",
-    name: "Conjunto Syna World Cinza/Rosa",
-    category: "syna-world",
-    price: 599.00,
-    originalPrice: 699.00,
-    color: "Cinza/Rosa",
-    image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=600&fit=crop",
-  },
-  {
-    id: "syna-5",
-    name: "Syna World Performance Set",
-    category: "syna-world",
-    price: 549.00,
-    color: "Branco/Azul",
-    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "syna-6",
-    name: "Camiseta Syna World Logo",
-    category: "syna-world",
-    price: 299.00,
-    color: "Branco",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=600&fit=crop",
-  },
-  {
-    id: "syna-7",
-    name: "Syna World Hoodie Central Cee",
-    category: "syna-world",
-    price: 499.00,
-    color: "Preto",
-    image: "https://images.unsplash.com/photo-1614975059251-992f11792571?w=600&h=600&fit=crop",
-    isBestSeller: true,
-  },
-
-  // === TRAPSTAR (placeholders - imagens não disponíveis no StockX) ===
-  {
-    id: "trapstar-1",
-    name: "Conjunto Trapstar Central Cee",
-    category: "trapstar",
-    price: 879.00,
-    originalPrice: 949.00,
-    color: "Preto/Neon",
-    image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&h=600&fit=crop",
-    isBestSeller: true,
-  },
-  {
-    id: "trapstar-2",
-    name: "Trapstar Irongate Shell Tracksuit",
-    category: "trapstar",
-    price: 799.00,
-    color: "Preto/Teal",
-    image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "trapstar-3",
-    name: "Trapstar Chenille Decoded Hoodie",
-    category: "trapstar",
-    price: 549.00,
-    color: "Cinza",
-    image: "https://images.unsplash.com/photo-1614975059251-992f11792571?w=600&h=600&fit=crop",
-  },
-  {
-    id: "trapstar-4",
-    name: "Camiseta Trapstar Decoded",
-    category: "trapstar",
-    price: 329.00,
-    color: "Branco",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=600&fit=crop",
-  },
-  {
-    id: "trapstar-5",
-    name: "Trapstar Foundation Shell Black/Grey",
-    category: "trapstar",
-    price: 699.00,
-    color: "Preto/Cinza",
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "trapstar-6",
-    name: "Trapstar Irongate Arch Chenille",
-    category: "trapstar",
-    price: 649.00,
-    color: "Preto/Vermelho",
-    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&h=600&fit=crop",
-    isBestSeller: true,
-  },
-  {
-    id: "trapstar-7",
-    name: "Trapstar Script Hoodie",
-    category: "trapstar",
-    price: 449.00,
-    color: "Cinza/Rosa",
-    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&h=600&fit=crop",
-  },
-
-  // === OFF-WHITE (placeholders - imagens específicas não encontradas) ===
-  {
-    id: "offwhite-1",
-    name: "Camiseta Off-White Arrow Logo",
-    category: "off-white",
-    price: 549.00,
-    color: "Branco",
-    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=600&fit=crop",
-    isBestSeller: true,
-  },
-  {
-    id: "offwhite-2",
-    name: "Camiseta Off-White Caravaggio",
-    category: "off-white",
-    price: 599.00,
-    color: "Preto",
-    image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "offwhite-3",
-    name: "Hoodie Off-White Diag",
-    category: "off-white",
-    price: 799.00,
-    originalPrice: 999.00,
-    color: "Preto",
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop",
-  },
-  {
-    id: "offwhite-4",
-    name: "Off-White Industrial Belt",
-    category: "off-white",
-    price: 349.00,
-    color: "Amarelo",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
-  },
-  {
-    id: "offwhite-5",
-    name: "Camiseta Off-White Bandana Arrow",
-    category: "off-white",
-    price: 649.00,
-    color: "Azul",
-    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "offwhite-6",
-    name: "Off-White Stitch Arrow Tee",
-    category: "off-white",
-    price: 499.00,
-    color: "Preto/Branco",
-    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=600&fit=crop",
-    isBestSeller: true,
-  },
-
-  // === BAPE ===
-  {
-    id: "bape-1",
-    name: "Hoodie Bape Shark Full Zip",
-    category: "bape",
-    price: 999.00,
-    color: "Azul Camo",
-    image: bapeSharkHoodieBlue,
-    isBestSeller: true,
-  },
-  {
-    id: "bape-2",
-    name: "Moletom Bape x Inter Miami Camo",
-    category: "bape",
-    price: 799.00,
-    color: "Preto",
-    image: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "bape-3",
-    name: "Calça Bape x OVO Dupla Face",
-    category: "bape",
-    price: 529.00,
-    color: "Preto/Shark",
-    image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&h=600&fit=crop",
-  },
-  {
-    id: "bape-4",
-    name: "Camiseta Bape Shark",
-    category: "bape",
-    price: 449.00,
-    originalPrice: 499.00,
-    color: "Branco",
-    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=600&fit=crop",
-  },
-  {
-    id: "bape-5",
-    name: "Camiseta Bape College Logo",
-    category: "bape",
-    price: 399.00,
-    color: "Preto",
-    image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop",
-    isNew: true,
-  },
-  {
-    id: "bape-6",
-    name: "Hoodie Bape ABC Camo",
-    category: "bape",
-    price: 899.00,
-    color: "Verde Camo",
-    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop",
-    isBestSeller: true,
-  },
-  {
-    id: "bape-7",
-    name: "Bape Solid Camo Shark Hoodie",
-    category: "bape",
-    price: 1099.00,
-    color: "Preto",
-    image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&h=600&fit=crop",
-  },
+  // NIKE SNEAKERS
+  { id: "nike-1", name: "Nike Dunk Low Retro White Black", category: "nike", price: 699, color: "Branco/Preto", image: nikeDunkLowPanda, isBestSeller: true },
+  { id: "nike-2", name: "Nike Air Force 1 Low White '07", category: "nike", price: 599, color: "Branco", image: nikeAirForce1White, isBestSeller: true },
+  { id: "nike-3", name: "Nike SB Dunk Low Parra", category: "nike", price: 899, originalPrice: 1099, color: "Branco/Multicolor", image: nikeSbDunkParra },
+  { id: "nike-4", name: "Nike Air Max Plus Triple Black", category: "nike", price: 849, color: "Preto", image: nikeAirMaxTnPlus },
+  { id: "nike-5", name: "Nike Zoom Vomero 5 Platinum Tint", category: "nike", price: 799, color: "Platinum Tint", image: nikeVomero5, isNew: true },
+  // NIKE APPAREL
+  { id: "nike-6", name: "Nike Tech Fleece Full-Zip Hoodie", category: "nike", price: 549, color: "Preto", image: nikeTechFleeceHoodieBlack, isBestSeller: true },
+  { id: "nike-7", name: "Nike Tech Fleece Full-Zip Hoodie", category: "nike", price: 549, color: "Cinza", image: nikeTechFleeceHoodieGrey },
+  { id: "nike-8", name: "Nike Tech Fleece Joggers", category: "nike", price: 449, color: "Preto", image: nikeTechFleeceJoggersBlack, isBestSeller: true },
+  { id: "nike-9", name: "Nike Tech Fleece Joggers", category: "nike", price: 449, color: "Cinza", image: nikeTechFleeceJoggersGrey },
+  // JORDAN
+  { id: "jordan-1", name: "Air Jordan 4 Retro Raptors Drake OVO", category: "jordan", price: 829, color: "Preto/Roxo/Vermelho", image: jordan4Raptors, isBestSeller: true },
+  { id: "jordan-2", name: "Air Jordan 1 Retro High OG Chicago Lost and Found", category: "jordan", price: 1199, originalPrice: 1399, color: "Vermelho/Branco/Preto", image: jordan1Chicago, isBestSeller: true },
+  { id: "jordan-3", name: "Air Jordan 1 Low Shadow Toe", category: "jordan", price: 749, color: "Cinza/Preto/Branco", image: jordan1LowShadow },
+  { id: "jordan-4", name: "Air Jordan 11 Retro Concord 2018", category: "jordan", price: 1299, color: "Branco/Preto/Azul", image: jordan11Concord, isNew: true },
+  { id: "jordan-5", name: "Air Jordan 4 Retro Bred 2019", category: "jordan", price: 999, color: "Preto/Vermelho", image: jordan4Bred, isBestSeller: true },
+  { id: "jordan-6", name: "Air Jordan 3 Retro White Cement Reimagined", category: "jordan", price: 1099, color: "Branco/Cinza/Vermelho", image: jordan3WhiteCement },
+  // SUPREME
+  { id: "supreme-1", name: "Supreme Box Logo Tee FW23", category: "supreme", price: 449, color: "Branco", image: supremeBoxLogoTeeWhite, isBestSeller: true },
+  { id: "supreme-2", name: "Supreme Gas Tee", category: "supreme", price: 349, color: "Preto", image: supremeGasTeeBlack, isNew: true },
+  { id: "supreme-3", name: "Supreme Box Logo Hoodie Heather Grey", category: "supreme", price: 799, color: "Cinza", image: supremeBoxLogoHoodieGrey, isBestSeller: true },
+  { id: "supreme-4", name: "Supreme New Era Box Logo Beanie FW21", category: "supreme", price: 249, color: "Preto", image: supremeBeanieBlack },
+  { id: "supreme-5", name: "Supreme Cross Box Logo Hooded Sweatshirt", category: "supreme", price: 899, color: "Preto", image: supremeCrossBoxLogoHoodieBlack, isNew: true },
+  { id: "supreme-6", name: "Supreme Bandana Box Logo Hooded Sweatshirt", category: "supreme", price: 999, originalPrice: 1199, color: "Preto", image: supremeBandanaBoxLogoHoodieBlack, isBestSeller: true },
+  { id: "supreme-7", name: "Supreme Swarovski Box Logo Hooded Sweatshirt", category: "supreme", price: 1299, color: "Preto", image: supremeSwarovskiBoxLogoHoodieBlack },
+  { id: "supreme-8", name: "Supreme Arabic Logo Hooded Sweatshirt", category: "supreme", price: 749, color: "Preto", image: supremeArabicLogoHoodieBlack },
+  { id: "supreme-9", name: "Supreme S Logo Hooded Sweatshirt", category: "supreme", price: 649, color: "Preto", image: supremeSLogoHoodieBlack },
+  { id: "supreme-10", name: "Supreme Motion Logo Hooded Sweatshirt", category: "supreme", price: 699, color: "Preto", image: supremeMotionLogoHoodieBlack, isNew: true },
+  // BAPE
+  { id: "bape-1", name: "BAPE Color Camo Shark Full Zip Hoodie", category: "bape", price: 999, color: "Azul Camo", image: bapeSharkHoodieBlue, isBestSeller: true },
+  { id: "bape-2", name: "BAPE Shark Full Zip Hoodie", category: "bape", price: 949, color: "Preto", image: bapeSharkHoodieBlack, isBestSeller: true },
+  { id: "bape-3", name: "BAPE Color Camo Shark Full Zip Hoodie", category: "bape", price: 999, color: "Roxo Camo", image: bapeSharkHoodiePurple, isNew: true },
+  { id: "bape-4", name: "BAPE 1st Camo Shark Full Zip Hoodie", category: "bape", price: 1049, color: "Verde Camo", image: bapeSharkHoodieGreen },
+  { id: "bape-5", name: "BAPE Shark Full Zip Hoodie", category: "bape", price: 949, color: "Vermelho", image: bapeSharkHoodieRed },
+  { id: "bape-6", name: "BAPE Tiger Full Zip Hoodie", category: "bape", price: 1099, color: "Preto", image: bapeTigerHoodieBlack, isNew: true },
+  { id: "bape-7", name: "BAPE 1st Camo New Era Cap", category: "bape", price: 299, color: "Verde Camo", image: bapeNewEraCapGreen },
+  { id: "bape-8", name: "BAPE Shark Sweat Shorts", category: "bape", price: 449, color: "Preto", image: bapeSharkSweatShortsBlack },
+  // SYNA WORLD
+  { id: "syna-1", name: "Syna World Central Cee Tracksuit", category: "syna-world", price: 649, color: "Preto", image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=600&fit=crop", isBestSeller: true },
+  { id: "syna-2", name: "Syna World x Nemzzz RDT Tee", category: "syna-world", price: 379, color: "Preto", image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop", isNew: true },
+  // TRAPSTAR
+  { id: "trapstar-1", name: "Trapstar Irongate Central Cee Tracksuit", category: "trapstar", price: 879, originalPrice: 949, color: "Preto/Neon", image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&h=600&fit=crop", isBestSeller: true },
+  { id: "trapstar-2", name: "Trapstar Irongate Shell Tracksuit", category: "trapstar", price: 799, color: "Preto/Teal", image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&h=600&fit=crop", isNew: true },
+  // OFF-WHITE
+  { id: "offwhite-1", name: "Off-White Diag Arrows Slim Tee", category: "off-white", price: 549, color: "Branco", image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=600&fit=crop", isBestSeller: true },
+  { id: "offwhite-2", name: "Off-White Caravaggio Arrow Over Hoodie", category: "off-white", price: 899, color: "Preto", image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=600&fit=crop", isNew: true },
 ];
 
 export const categories = [
@@ -503,8 +103,8 @@ export const categories = [
   { id: "nike", name: "Nike", icon: "👟" },
   { id: "jordan", name: "Jordan", icon: "🏀" },
   { id: "supreme", name: "Supreme", icon: "📦" },
+  { id: "bape", name: "Bape", icon: "🦍" },
   { id: "syna-world", name: "Syna World", icon: "🌍" },
   { id: "trapstar", name: "Trapstar", icon: "⭐" },
   { id: "off-white", name: "Off-White", icon: "⚡" },
-  { id: "bape", name: "Bape", icon: "🦍" },
 ];
